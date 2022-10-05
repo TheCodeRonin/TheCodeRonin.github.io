@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+  </head>
+  <body style="background-color: rgb(29, 50, 90)">
+    <!-- Sticky top bar for medium to large screens-->
+    <div id="page">
+      <div class="top-bar-container" data-sticky-container>
+        <img
+          data-interchange="[assets/img/mobile_header_transparent.png, small], [assets/img/image_header_transparent_v3.png, medium]"
+          style="position: absolute; left: 0; right: 0; min-width: 100%"
+        />
+        <div
+          class="sticky"
+          data-sticky
+          data-options="anchor: page; marginTop: 0; stickyOn: small;"
+        >
+          <div
+            class="title-bar"
+            data-options="marginTop:0;"
+            style="background-color: hsla(0, 0%, 0%, 0.85)"
+          >
+            <div class="title-bar-left show-for-small-only">
+              <button
+                class="button"
+                type="button"
+                data-toggle="offCanvas"
+                style="background-color: transparent"
+              >
+                <!-- Screen readers will see "close" -->
+                <span class="show-for-sr">Menu</span>
+                <!-- Visual users will see the list, but not the "menu" text -->
+                <span aria-hidden="true"
+                  ><i
+                    class="fi-plus"
+                    style="font-size: 1.5rem; position: relative; top: 0.4rem"
+                  ></i
+                ></span>
+              </button>
+            </div>
+            <!-- Drop down menu for mobile -->
+            <div class="title-bar-left show-for-medium">
+              <ul
+                class="dropdown menu"
+                style="
+                  background-color: transparent;
+                  font-family: 'Courier New', Courier, monospace;
+                  text-transform: uppercase;
+                  font-weight: 200;
+                "
+                data-dropdown-menu
+              >
+                <li>
+                  <a href="index.html" style="color: rgb(255, 238, 0)">Home</a>
+                </li>
+                <li>
+                  <a href="projects.html" style="color: rgb(255, 238, 0)"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="resume.html" style="color: rgb(255, 238, 0)"
+                    >Resume</a
+                  >
+                </li>
+                <li>
+                  <a href="interests.html" style="color: rgb(255, 238, 0)"
+                    >Interests</a
+                  >
+                </li>
+                <li>
+                  <a href="info.html" style="color: rgb(255, 238, 0)">Info</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul
+                class="dropdown menu title-bar-right"
+                style="
+                  background-color: transparent;
+                  font-family: 'Courier New', Courier, monospace;
+                  text-transform: uppercase;
+                "
+              >
+                <li class="menu-text" style="color: white">PROJECT 01</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div
+          class="off-canvas position-left"
+          id="offCanvas"
+          data-off-canvas
+          style="background-color: rgb(0, 0, 0)"
+        >
+          <!-- Close button -->
+          <button
+            class="button large expanded"
+            aria-label="Close menu"
+            type="button"
+            style="background-color: rgb(255, 238, 0); color: black"
+            data-close
+          >
+            <span aria-hidden="true"
+              ><i
+                class="fi-x"
+                style="font-size: 1.5rem; position: relative; top: 0.08rem"
+              ></i
+            ></span>
+          </button>
+
+          <!-- Menu -->
+          <ul
+            class="vertical menu show-for-small-only"
+            style="
+              background-color: transparent;
+              font-family: 'Courier New', Courier, monospace;
+              font-weight: 200;
+              text-transform: uppercase;
+            "
+          >
+            <li>
+              <a href="index.html" style="color: rgb(255, 238, 0)">00: Home</a>
+            </li>
+            <li>
+              <a href="projects.html" style="color: rgb(255, 238, 0)"
+                >01: Projects</a
+              >
+            </li>
+            <li>
+              <a href="resume.html" style="color: rgb(255, 238, 0)"
+                >02: Resume</a
+              >
+            </li>
+            <li>
+              <a href="interests.html" style="color: rgb(255, 238, 0)"
+                >03: Interests</a
+              >
+            </li>
+            <li>
+              <a href="info.html" style="color: rgb(255, 238, 0)">04: Info</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- main content within a `grid-container` -->
+          <div class="grid-container fluid">
+            <!-- `grid-x` represents a row -->
+            <div class="grid-x grid-padding-y grid-padding-x">
+              <div class="cell large-auto">
+                <div
+                  class="card"
+                  style="
+                    background-color: hsla(0, 0%, 0%, 0.85);
+                    outline: auto;
+                    outline-style: double;
+                    outline-color: #ffffff;
+                    padding: 1.5em;
+                  "
+                >
+                  <div class="card-section">
+                    <img
+                      src="assets/img/formal_headshot.jpg"
+                      style="
+                        outline: auto;
+                        outline-style: double;
+                        outline-color: rgb(255, 238, 0);
+                      "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="cell large-auto" style="color: white">
+                <div
+                  class="callout large"
+                  style="
+                    background-color: hsla(0, 0%, 0%, 0.85);
+                    outline: auto;
+                    outline-style: double;
+                    outline-color: #ffffff;
+                  "
+                >
+                  <h3
+                    style="
+                      font-family: 'Courier New', Courier, monospace;
+                      font-weight: 200;
+                      font-size: 1.5em;
+                      color: rgb(255, 238, 0);
+                    "
+                  >
+                    ABOUT ME
+                  </h3>
+                  <p
+                    style="
+                      color: white;
+                      font-family: 'Courier New', Courier, monospace;
+                      font-size: 1.2em;
+                    "
+                  >
+                    I'm currently working towards completing a Computer Science
+                    major with a Japanese minor. I'm not quite sure what type of
+                    dev I want to become yet, but I definitely find web design
+                    extremely interesting so far. It's enjoyable to create a
+                    highly visual project through coding.
+                    <br />
+                    <br />
+                    My interests include creating music, art, and most things
+                    that allow for expression. Check out the
+                    <span
+                      style="
+                        font-family: 'Courier New', Courier, monospace;
+                        font-weight: 200;
+                        color: rgb(255, 238, 0);
+                      "
+                      >INTERESTS</span
+                    >
+                    tab at the top for more on my hobbies!
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="
+                position: relative;
+                background: transparent;
+                color: #ffffff;
+                padding-top: 12em;
+                padding-left: 2em;
+                padding-right: 2em;
+                padding-bottom: 4em;
+                left: 0px;
+              "
+              class="show-for-large"
+            >
+              <h2
+                style="
+                  text-align: left;
+                  color: rgb(255, 238, 0);
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                "
+              >
+                <i
+                  class="fi-page-filled"
+                  style="font-size: 0.9em; position: relative; bottom: 0.05em"
+                ></i>
+                &nbsp;PROJECT 01
+              </h2>
+              <h1
+                style="
+                  text-align: left;
+                  color: white;
+                  font-size: 5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -0.2em;
+                "
+              >
+                PERSONAL WEBSITE
+              </h1>
+              <br />
+              <br />
+              <br />
+              <h2
+                style="
+                  text-align: left;
+                  color: rgb(255, 238, 0);
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1.2em;
+                "
+              >
+                <i class="fi-x"></i>
+                &nbsp;ISSUES ENCOUNTERED
+              </h2>
+              <p
+                style="
+                  text-align: left;
+                  color: white;
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1.2em;
+                "
+              >
+                This page was created by utilizing the Foundation 6 docs page.
+                The largest struggles I encountered while making this website
+                are related to formatting. Attempting to keep images at a fixed
+                size and getting the pages to have specific spacings were some
+                of the issues.
+                <br />
+                <br />
+                This project is fairly all over the place, as things were just
+                decided randomly. I will definitely plan out a layout next time.
+                It seems like creating a mockup page through Affinity Photo
+                would help visualize the end product easier. Then it would be
+                about getting the page to look a specific way.
+              </p>
+              <br />
+              <br />
+              <br />
+              <h2
+                style="
+                  text-align: left;
+                  color: rgb(255, 238, 0);
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1em;
+                "
+              >
+                <i class="fi-check"></i>
+                &nbsp;WHAT WORKED
+              </h2>
+              <p
+                style="
+                  text-align: left;
+                  color: white;
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1em;
+                "
+              >
+                I learned a lot about how certain aspects of Foundation 6
+                function. I do not completely understand how to implement the
+                tools appropriately, but I do not feel like they are not as
+                intimidating to try and deploy after this project. I looked at
+                websites that I find interesting or cool and attempted to create
+                a style that matches the things I liked.
+              </p>
+            </div>
+
+            <div
+              style="
+                position: relative;
+                background: transparent;
+                color: #ffffff;
+                padding-top: 2em;
+                padding-left: 2em;
+                padding-right: 2em;
+                padding-bottom: 4em;
+                left: 0px;
+              "
+              class="hide-for-large"
+            >
+              <h2
+                style="
+                  text-align: left;
+                  color: rgb(255, 238, 0);
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                "
+              >
+                <i
+                  class="fi-page-filled"
+                  style="font-size: 0.9em; position: relative; bottom: 0.05em"
+                ></i>
+                &nbsp;PROJECT 01
+              </h2>
+              <h1
+                style="
+                  text-align: left;
+                  color: white;
+                  font-size: 2.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -0.2em;
+                "
+              >
+                PERSONAL WEBSITE
+              </h1>
+              <br />
+              <br />
+              <br />
+              <h2
+                style="
+                  text-align: left;
+                  color: rgb(255, 238, 0);
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1.2em;
+                "
+              >
+                <i class="fi-x"></i>
+                &nbsp;ISSUES ENCOUNTERED
+              </h2>
+              <p
+                style="
+                  text-align: left;
+                  color: white;
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1.2em;
+                "
+              >
+                This page was created by utilizing the Foundation 6 docs page.
+                The largest struggles I encountered while making this website
+                are related to formatting. Attempting to keep images at a fixed
+                size and getting the pages to have specific spacings were some
+                of the issues.
+                <br />
+                <br />
+                This project is fairly all over the place, as things were just
+                decided randomly. I will definitely plan out a layout next time.
+                It seems like creating a mockup page through Affinity Photo
+                would help visualize the end product easier. Then it would be
+                about getting the page to look a specific way.
+              </p>
+              <br />
+              <br />
+              <br />
+              <h2
+                style="
+                  text-align: left;
+                  color: rgb(255, 238, 0);
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1em;
+                "
+              >
+                <i class="fi-check"></i>
+                &nbsp;WHAT WORKED
+              </h2>
+              <p
+                style="
+                  text-align: left;
+                  color: white;
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1em;
+                "
+              >
+                I learned a lot about how certain aspects of Foundation 6
+                function. I do not completely understand how to implement the
+                tools appropriately, but I do not feel like they are not as
+                intimidating to try and deploy after this project. I looked at
+                websites that I find interesting or cool and attempted to create
+                a style that matches the things I liked.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+      $(document).foundation();
+    </script>
+  </body>
+</html>

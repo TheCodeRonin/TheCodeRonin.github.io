@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+  </head>
+  <body style="background-color: rgb(255, 238, 0)">
+    <!-- Sticky top bar for medium to large screens-->
+    <div id="page">
+      <div class="top-bar-container" data-sticky-container>
+        <div
+          class="sticky"
+          data-sticky
+          data-options="anchor: page; marginTop: 0; stickyOn: small;"
+        >
+          <div
+            class="title-bar"
+            data-options="marginTop:0;"
+            style="background-color: hsla(0, 0%, 0%, 0.85)"
+          >
+            <div class="title-bar-left show-for-small-only">
+              <button
+                class="button"
+                type="button"
+                data-toggle="offCanvas"
+                style="background-color: transparent"
+              >
+                <!-- Screen readers will see "close" -->
+                <span class="show-for-sr">Menu</span>
+                <!-- Visual users will see the list, but not the "menu" text -->
+                <span aria-hidden="true"
+                  ><i
+                    class="fi-plus"
+                    style="font-size: 1.5rem; position: relative; top: 0.4rem"
+                  ></i
+                ></span>
+              </button>
+            </div>
+            <!-- Drop down menu for mobile -->
+            <div class="title-bar-left show-for-medium">
+              <ul
+                class="dropdown menu"
+                style="
+                  background-color: transparent;
+                  font-family: 'Courier New', Courier, monospace;
+                  text-transform: uppercase;
+                  font-weight: 200;
+                "
+                data-dropdown-menu
+              >
+                <li>
+                  <a href="index.html" style="color: rgb(0, 255, 255)">Home</a>
+                </li>
+                <li>
+                  <a href="projects.html" style="color: rgb(0, 255, 255)"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="resume.html" style="color: rgb(0, 255, 255)"
+                    >Resume</a
+                  >
+                </li>
+                <li>
+                  <a href="interests.html" style="color: rgb(0, 255, 255)"
+                    >Interests</a
+                  >
+                </li>
+                <li>
+                  <a href="info.html" style="color: rgb(0, 255, 255)">Info</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul
+                class="dropdown menu title-bar-right"
+                style="
+                  background-color: transparent;
+                  font-family: 'Courier New', Courier, monospace;
+                  text-transform: uppercase;
+                "
+              >
+                <li class="menu-text" style="color: white">PROJECT 01</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+        <div
+          class="off-canvas position-left"
+          id="offCanvas"
+          data-off-canvas
+          style="background-color: rgb(0, 0, 0)"
+        >
+          <!-- Close button -->
+          <button
+            class="button large expanded"
+            aria-label="Close menu"
+            type="button"
+            style="background-color: rgb(0, 255, 255); color: black"
+            data-close
+          >
+            <span aria-hidden="true"
+              ><i
+                class="fi-x"
+                style="font-size: 1.5rem; position: relative; top: 0.08rem"
+              ></i
+            ></span>
+          </button>
+
+          <!-- Menu -->
+          <ul
+            class="vertical menu show-for-small-only"
+            style="
+              background-color: transparent;
+              font-family: 'Courier New', Courier, monospace;
+              font-weight: 200;
+              text-transform: uppercase;
+            "
+          >
+            <li>
+              <a href="index.html" style="color: rgb(0, 255, 255)">00: Home</a>
+            </li>
+            <li>
+              <a href="projects.html" style="color: rgb(0, 255, 255)"
+                >01: Projects</a
+              >
+            </li>
+            <li>
+              <a href="resume.html" style="color: rgb(0, 255, 255)"
+                >02: Resume</a
+              >
+            </li>
+            <li>
+              <a href="interests.html" style="color: rgb(0, 255, 255)"
+                >03: Interests</a
+              >
+            </li>
+            <li>
+              <a href="info.html" style="color: rgb(0, 255, 255)">04: Info</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- main content within a `grid-container` -->
+          <div class="grid-container fluid">
+            <!-- `grid-x` represents a row -->
+
+            <div
+              style="
+                position: relative;
+                background: transparent;
+                color: #ffffff;
+                padding-top: 2em;
+                padding-left: 2em;
+                padding-right: 2em;
+                padding-bottom: 4em;
+                left: 0px;
+              "
+              class="show-for-large"
+            >
+              <h2
+                style="
+                  text-align: left;
+                  color: black;
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                "
+              >
+                <i
+                  class="fi-page-filled"
+                  style="font-size: 0.9em; position: relative; bottom: 0.05em"
+                ></i>
+                &nbsp;PROJECT 01
+              </h2>
+              <h1
+                style="
+                  text-align: left;
+                  color: black;
+                  font-size: 5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -0.2em;
+                "
+              >
+                PROJECT INFO
+              </h1>
+              <br />
+              <br />
+              <br />
+              <h2
+                style="
+                  text-align: left;
+                  color: black;
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1.2em;
+                "
+              >
+                <i
+                  class="fi-lightbulb"
+                  style="position: relative; bottom: 0.11em"
+                ></i>
+                &nbsp;THINGS TO CONSIDER
+              </h2>
+              <p
+                style="
+                  text-align: left;
+                  color: black;
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1.2em;
+                "
+              >
+                DATA: I definitely load a lot of data, more specifically on the
+                INTERESTS page. However, I did reduce the image sizes and audio
+                file sizes outside of code. Each image was edited in Affinity
+                Photo. I used Foundation 6's interchange tool to display a
+                smaller background image for the home page on mobile devices to
+                avoid loading a higher resolution image. The home page
+                background image is a PNG due to the transparency, so it has a
+                larger amount of data to load that I couldn't avoid if I wanted
+                to use this custom background. Every other image is a JPEG with
+                reduced resolution. I have no idea what the best resolution to
+                use is, but the original resolutions were too close to 2K. I
+                reduced image sizes to things like 750px and 500px. Each audio
+                sample was reduced from a WAV file to a 320 kbps MP3.
+                <br />
+                <br />
+                CSS: I did almost all of the styling in line, as I did not plan
+                out how the website should look before I started adding a bunch
+                of things. This made consistency confusing at first, but it did
+                allow me to come up with specific styling on the spot. Next time
+                I will use a lot more labels to streamline the styling process.
+                <br />
+                <br />
+                FORMATTING: I failed to comment enough to make my code
+                understandable from an outside perspective. It became one of
+                those things where it makes sense to me, but only because I
+                created it. I will go back and comment/label all of my divisions
+                to make customization easier. This would fix scalability
+                problems in the future if I want to add or change the website.
+              </p>
+              <br />
+              <br />
+              <br />
+            </div>
+
+            <div
+              style="
+                position: relative;
+                background: transparent;
+                color: #ffffff;
+                padding-top: 2em;
+                padding-left: 2em;
+                padding-right: 2em;
+                padding-bottom: 4em;
+                left: 0px;
+              "
+              class="hide-for-large"
+            >
+              <h2
+                style="
+                  text-align: left;
+                  color: black;
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                "
+              >
+                <i
+                  class="fi-page-filled"
+                  style="font-size: 0.9em; position: relative; bottom: 0.05em"
+                ></i>
+                &nbsp;PROJECT 01
+              </h2>
+              <h1
+                style="
+                  text-align: left;
+                  color: black;
+                  font-size: 2.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -0.2em;
+                "
+              >
+                PROJECT INFO
+              </h1>
+              <br />
+              <br />
+              <br />
+              <h2
+                style="
+                  text-align: left;
+                  color: black;
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1.2em;
+                "
+              >
+                <i
+                  class="fi-lightbulb"
+                  style="position: relative; bottom: 0.11em"
+                ></i>
+                &nbsp;THINGS TO CONSIDER
+              </h2>
+              <p
+                style="
+                  text-align: left;
+                  color: black;
+                  font-size: 1.5em;
+                  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold',
+                    sans-serif;
+                  position: relative;
+                  top: -1.2em;
+                "
+              >
+                DATA: I definitely load a lot of data, more specifically on the
+                INTERESTS page. However, I did reduce the image sizes and audio
+                file sizes outside of code. Each image was edited in Affinity
+                Photo. I used Foundation 6's interchange tool to display a
+                smaller background image for the home page on mobile devices to
+                avoid loading a higher resolution image. The home page
+                background image is a PNG due to the transparency, so it has a
+                larger amount of data to load that I couldn't avoid if I wanted
+                to use this custom background. Every other image is a JPEG with
+                reduced resolution. I have no idea what the best resolution to
+                use is, but the original resolutions were too close to 2K. I
+                reduced image sizes to things like 750px and 500px. Each audio
+                sample was reduced from a WAV file to a 320 kbps MP3.
+                <br />
+                <br />
+                CSS: I did almost all of the styling in line, as I did not plan
+                out how the website should look before I started adding a bunch
+                of things. This made consistency confusing at first, but it did
+                allow me to come up with specific styling on the spot. Next time
+                I will use a lot more labels to streamline the styling process.
+                <br />
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+      $(document).foundation();
+    </script>
+  </body>
+</html>

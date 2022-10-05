@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/foundation-icons/foundation-icons.css" />
+  </head>
+  <body style="background-color: rgb(29, 50, 90)">
+    <!-- Sticky top bar for medium to large screens-->
+    <div id="page">
+      <div class="top-bar-container" data-sticky-container>
+        <div
+          class="sticky"
+          data-sticky
+          data-options="anchor: page; marginTop: 0; stickyOn: small;"
+        >
+          <div
+            class="title-bar"
+            data-options="marginTop:0;"
+            style="background-color: hsla(0, 0%, 0%, 0.85)"
+          >
+            <div class="title-bar-left show-for-small-only">
+              <button
+                class="button"
+                type="button"
+                data-toggle="offCanvas"
+                style="background-color: transparent"
+              >
+                <!-- Screen readers will see "close" -->
+                <span class="show-for-sr">Menu</span>
+                <!-- Visual users will see the list, but not the "menu" text -->
+                <span aria-hidden="true"
+                  ><i
+                    class="fi-plus"
+                    style="font-size: 1.5rem; position: relative; top: 0.4rem"
+                  ></i
+                ></span>
+              </button>
+            </div>
+            <!-- Drop down menu for mobile -->
+            <div class="title-bar-left show-for-medium">
+              <ul
+                class="dropdown menu"
+                style="
+                  background-color: transparent;
+                  font-family: 'Courier New', Courier, monospace;
+                  text-transform: uppercase;
+                  font-weight: 200;
+                "
+                data-dropdown-menu
+              >
+                <li>
+                  <a href="index.html" style="color: rgb(255, 238, 0)">Home</a>
+                </li>
+                <li>
+                  <a href="projects.html" style="color: rgb(255, 238, 0)"
+                    >Projects</a
+                  >
+                </li>
+                <li>
+                  <a href="resume.html" style="color: rgb(255, 238, 0)"
+                    >Resume</a
+                  >
+                </li>
+                <li>
+                  <a href="interests.html" style="color: rgb(255, 238, 0)"
+                    >Interests</a
+                  >
+                </li>
+                <li>
+                  <a href="info.html" style="color: rgb(255, 238, 0)">Info</a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <ul
+                class="dropdown menu title-bar-right"
+                style="
+                  background-color: transparent;
+                  font-family: 'Courier New', Courier, monospace;
+                  text-transform: uppercase;
+                "
+              >
+                <li class="menu-text" style="color: white">PROJECT 01</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="off-canvas-wrapper">
+        <!-- Your menu or Off-canvas content goes here -->
+
+        <div
+          class="off-canvas position-left"
+          id="offCanvas"
+          data-off-canvas
+          style="background-color: rgb(0, 0, 0)"
+        >
+          <!-- Close button -->
+          <button
+            class="button large expanded"
+            aria-label="Close menu"
+            type="button"
+            style="background-color: rgb(255, 238, 0); color: black"
+            data-close
+          >
+            <span aria-hidden="true"
+              ><i
+                class="fi-x"
+                style="font-size: 1.5rem; position: relative; top: 0.08rem"
+              ></i
+            ></span>
+          </button>
+
+          <!-- Menu -->
+          <ul
+            class="vertical menu show-for-small-only"
+            style="
+              background-color: transparent;
+              font-family: 'Courier New', Courier, monospace;
+              font-weight: 200;
+              text-transform: uppercase;
+            "
+          >
+            <li>
+              <a href="index.html" style="color: rgb(255, 238, 0)">00: Home</a>
+            </li>
+            <li>
+              <a href="projects.html" style="color: rgb(255, 238, 0)"
+                >01: Projects</a
+              >
+            </li>
+            <li>
+              <a href="resume.html" style="color: rgb(255, 238, 0)"
+                >02: Resume</a
+              >
+            </li>
+            <li>
+              <a href="interests.html" style="color: rgb(255, 238, 0)"
+                >03: Interests</a
+              >
+            </li>
+            <li>
+              <a href="info.html" style="color: rgb(255, 238, 0)">04: Info</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Your page content lives here -->
+        <div class="off-canvas-content" data-off-canvas-content>
+          <!-- main content within a `grid-container` -->
+          <div class="grid-container fluid">
+            <!-- `grid-x` represents a row -->
+            <div class="grid-x grid-padding-y grid-padding-x">
+              <div class="cell large-auto">
+                <div
+                  class="card"
+                  style="
+                    background-color: hsla(0, 0%, 0%, 0.85);
+                    outline: auto;
+                    outline-style: double;
+                    outline-color: #ffffff;
+                    padding: 1.5em;
+                  "
+                >
+                  <div
+                    class="card-section"
+                    style="
+                      color: white;
+                      font-family: 'Courier New', Courier, monospace;
+                      font-size: 1.2em;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Courier New', Courier, monospace;
+                        font-weight: 200;
+                        font-size: 1.5em;
+                        color: rgb(255, 238, 0);
+                      "
+                    >
+                      CREATION
+                    </h3>
+                    <p>
+                      Here are some Blender models I have made. Definitely a
+                      time sink.
+                    </p>
+                  </div>
+
+                  <div class="card-section">
+                    <img
+                      src="assets/img/blenderBeskar.jpg"
+                      style="
+                        outline: auto;
+                        outline-style: double;
+                        outline-color: rgb(255, 238, 0);
+                      "
+                    />
+                  </div>
+
+                  <div class="card-section">
+                    <img
+                      src="assets/img/blenderCrate1.jpg"
+                      style="
+                        outline: auto;
+                        outline-style: double;
+                        outline-color: rgb(255, 238, 0);
+                      "
+                    />
+                  </div>
+
+                  <div class="card-section">
+                    <img
+                      src="assets/img/blenderCrate2.jpg"
+                      style="
+                        outline: auto;
+                        outline-style: double;
+                        outline-color: rgb(255, 238, 0);
+                      "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="cell large-auto" style="color: white">
+                <div
+                  class="callout large"
+                  style="
+                    background-color: hsla(0, 0%, 0%, 0.85);
+                    outline: auto;
+                    outline-style: double;
+                    outline-color: #ffffff;
+                    padding: 1.5em;
+                  "
+                >
+                  <div
+                    class="card-section"
+                    style="
+                      color: white;
+                      font-family: 'Courier New', Courier, monospace;
+                      font-size: 1.2em;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Courier New', Courier, monospace;
+                        font-weight: 200;
+                        font-size: 1.5em;
+                        color: rgb(255, 238, 0);
+                      "
+                    >
+                      BUILDING
+                    </h3>
+                    <p>
+                      This one could probably fall under the
+                      <span style="color: rgb(255, 238, 0)">CREATION</span> tab,
+                      but I felt like it was getting a little long over there.
+                      <br />
+                      <br />
+                      Here's my keyboard I put together recently, as well as a
+                      random gunpla for some extra spice.
+                    </p>
+                  </div>
+
+                  <div class="card-section">
+                    <img
+                      src="assets/img/keyboard1.jpg"
+                      style="
+                        outline: auto;
+                        outline-style: double;
+                        outline-color: rgb(255, 238, 0);
+                      "
+                    />
+                  </div>
+
+                  <div class="card-section">
+                    <img
+                      src="assets/img/keyboard2.jpg"
+                      style="
+                        outline: auto;
+                        outline-style: double;
+                        outline-color: rgb(255, 238, 0);
+                      "
+                    />
+                  </div>
+
+                  <div class="card-section">
+                    <img
+                      src="assets/img/keyboard3.jpg"
+                      style="
+                        outline: auto;
+                        outline-style: double;
+                        outline-color: rgb(255, 238, 0);
+                      "
+                    />
+                  </div>
+
+                  <div class="card-section">
+                    <img
+                      src="assets/img/gunplaNorn.jpg"
+                      style="
+                        outline: auto;
+                        outline-style: double;
+                        outline-color: rgb(255, 238, 0);
+                      "
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="cell large-auto">
+                <div
+                  class="card"
+                  style="
+                    background-color: hsla(0, 0%, 0%, 0.85);
+                    outline: auto;
+                    outline-style: double;
+                    outline-color: #ffffff;
+                    padding: 1.5em;
+                  "
+                >
+                  <div
+                    class="card-section"
+                    style="
+                      color: white;
+                      font-family: 'Courier New', Courier, monospace;
+                      font-size: 1.2em;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Courier New', Courier, monospace;
+                        font-weight: 200;
+                        font-size: 1.5em;
+                        color: rgb(255, 238, 0);
+                      "
+                    >
+                      MUSIC
+                    </h3>
+
+                    <p>
+                      I very much enjoy all kinds of music. I took a DJ class in
+                      high school, which was a pretty different experience. I
+                      now have tinitus though, so make sure to use ear plugs at
+                      shows.
+                      <br />
+                      <br />
+                      I make a lot of random types of music. Here's some tracks
+                      I have made. All of these are made using FL Studio and a
+                      depressing amount of Kontakt libraries. All of these
+                      tracks aren't fully mixed and mastered, and these audio
+                      files are MP3 to save space, so they will probably sound
+                      rough in that regard!
+                    </p>
+                  </div>
+
+                  <div
+                    class="card-section"
+                    style="
+                      color: white;
+                      font-family: 'Courier New', Courier, monospace;
+                      font-size: 1.2em;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Courier New', Courier, monospace;
+                        font-weight: 200;
+                        font-size: 1.5em;
+                        color: rgb(255, 238, 0);
+                        padding-top: 1.2em;
+                      "
+                    >
+                      mSgH Remake (Orchestral)
+                    </h3>
+
+                    <p>
+                      Here is a Hiroyuki Sawano track I attempted to remake by
+                      ear.
+                    </p>
+
+                    <audio controls>
+                      <source src="assets/audio/mSgH.mp3" type="audio/mpeg" />
+                    </audio>
+                  </div>
+
+                  <div
+                    class="card-section"
+                    style="
+                      color: white;
+                      font-family: 'Courier New', Courier, monospace;
+                      font-size: 1.2em;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Courier New', Courier, monospace;
+                        font-weight: 200;
+                        font-size: 1.5em;
+                        color: rgb(255, 238, 0);
+                        padding-top: 1.2em;
+                      "
+                    >
+                      Lunar Remake (House)
+                    </h3>
+
+                    <p>
+                      I also tried remaking this track from a game by ear. If
+                      you know where this track is from, that's unfortunate. The
+                      build up and vocal chop drop at 2:00 was extremely fun to
+                      work on.
+                    </p>
+
+                    <audio controls>
+                      <source
+                        src="assets/audio/lunarBeats.mp3"
+                        type="audio/mpeg"
+                      />
+                    </audio>
+                  </div>
+
+                  <div
+                    class="card-section"
+                    style="
+                      color: white;
+                      font-family: 'Courier New', Courier, monospace;
+                      font-size: 1.2em;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Courier New', Courier, monospace;
+                        font-weight: 200;
+                        font-size: 1.5em;
+                        color: rgb(255, 238, 0);
+                        padding-top: 1.2em;
+                      "
+                    >
+                      Original 00 (Post Rock)
+                    </h3>
+
+                    <p>
+                      Here's my attempt at making Post Rock. Skip to 35 seconds
+                      if you want to hear the drop with the electric guitars
+                      specifically.
+                    </p>
+
+                    <audio controls>
+                      <source
+                        src="assets/audio/postRock.mp3"
+                        type="audio/mpeg"
+                      />
+                    </audio>
+                  </div>
+
+                  <div
+                    class="card-section"
+                    style="
+                      color: white;
+                      font-family: 'Courier New', Courier, monospace;
+                      font-size: 1.2em;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Courier New', Courier, monospace;
+                        font-weight: 200;
+                        font-size: 1.5em;
+                        color: rgb(255, 238, 0);
+                        padding-top: 1.2em;
+                      "
+                    >
+                      Original 01 (Orchestral)
+                    </h3>
+
+                    <p>
+                      Here's a short orchestral drop, consisting of strings and
+                      an acoustic guitar. I have noticed the bass and cellos
+                      sound warped, but it is what it is.
+                    </p>
+
+                    <audio controls>
+                      <source
+                        src="assets/audio/reflection.mp3"
+                        type="audio/mpeg"
+                      />
+                    </audio>
+                  </div>
+
+                  <div
+                    class="card-section"
+                    style="
+                      color: white;
+                      font-family: 'Courier New', Courier, monospace;
+                      font-size: 1.2em;
+                    "
+                  >
+                    <h3
+                      style="
+                        font-family: 'Courier New', Courier, monospace;
+                        font-weight: 200;
+                        font-size: 1.5em;
+                        color: rgb(255, 238, 0);
+                        padding-top: 1.2em;
+                      "
+                    >
+                      Original 02 (Orchestral)
+                    </h3>
+
+                    <p>
+                      Here's a longer form orchestral build up and drop. I would
+                      say where the drop is, but that removes the drama!
+                    </p>
+
+                    <audio controls>
+                      <source src="assets/audio/nine.mp3" type="audio/mpeg" />
+                    </audio>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- include before closing <body> tag -->
+    <script src="js/vendor.js"></script>
+    <script src="js/foundation.js"></script>
+    <script type="application/javascript">
+      $(document).foundation();
+    </script>
+  </body>
+</html>
